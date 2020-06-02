@@ -59,6 +59,8 @@ public class Homework { // #1
         int fifth = 10;
         System.out.print(first *= fifth); // присвоение 1
         System.out.print("   ");
+        System.out.print(fourth /= 50); // присвоение 6
+        System.out.print("   ");
         System.out.print(fourth -= fourth); // присвоение 2
         System.out.print("   ");
         System.out.print(second += fifth); // присвоение 3
@@ -66,7 +68,6 @@ public class Homework { // #1
         System.out.print(fifth -= third); // присвоение 4
         System.out.print("   ");
         System.out.println(third %= first); // присвоение 5
-        System.out.println(fourth /= first); // присвоение 6
         System.out.print("   ");
 
         // логика #5
