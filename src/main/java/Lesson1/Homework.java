@@ -79,6 +79,6 @@ public class Homework { // #1
         System.out.print(result >= l);
         System.out.print("   ");
         System.out.print(result >= l || b > n);
-// test
+// test 1
     }
 }
