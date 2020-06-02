@@ -10,7 +10,8 @@ public class Homework { // #1
         float f = 14.88F;
         char c = '0';
         boolean bo = false;
-
+        String MyString = "Я пытался, но не вышло";
+        System.out.println(MyString);
         //арифметические действия #3
         double result = b + s - f;
         System.out.print(result); // дробный результат 1
