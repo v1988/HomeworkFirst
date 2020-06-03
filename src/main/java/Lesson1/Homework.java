@@ -12,6 +12,8 @@ public class Homework { // #1
         boolean bo = false;
         String myString = "Я пытался, но не вышло";
         System.out.println(myString);
+        String myString2 = new String("Я пытался, но не вышло");
+        System.out.println(myString2);
         int a = 1, j = 7, r = 9;
         double d = 1.45, p = 2.66, q = 8.09;
         //арифметические действия #3
