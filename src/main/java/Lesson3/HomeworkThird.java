@@ -36,12 +36,6 @@ public class HomeworkThird {
         double val6 = random.nextDouble();
         System.out.println(val1 + val2 + val3 + val4 + val5 + val6);
 
-        // №3
-        System.out.println("Введите количество участников:");
-        int players = scanner.nextInt();
-        int winner = random.nextInt(players);
-        System.out.println("Выйграл участник под номером: " + winner);
-
         // №4
         System.out.println(Math.max(10, 134));
         System.out.println(Math.min(10, 134));
@@ -51,11 +45,11 @@ public class HomeworkThird {
         System.out.println(Math.asin(0.5));
         System.out.println(Math.acos(0.5));
 
-        NumberSeven numberSeven = new NumberSeven();
-        int sum = NumberSeven.sum(10, 5);
-        int divide = NumberSeven.divide(20, 2);
-        double multiply = numberSeven.multiply(5,0.5 );
-        double subtraction = numberSeven.subtraction(7, 1.5);
+        Сount сount = new Сount();
+        int sum = Сount.sum(10, 5);
+        int divide = Сount.divide(20, 2);
+        double multiply = сount.multiply(5,0.5 );
+        double subtraction = сount.subtraction(7, 1.5);
 
         Employee1 employee1 = new Employee1();
         Employee2 employee2 = new Employee2();
@@ -73,5 +67,14 @@ public class HomeworkThird {
         double resultRandom = random.nextInt(7000) + 20001;
         System.out.println(resultRandom);
         return resultRandom;
+    }
+    public static int winner (int a) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        System.out.println("Введите количество участников:");
+        int players = scanner.nextInt();
+        int winner = random.nextInt(players);
+        System.out.println("Выйграл участник под номером: " + winner);
+        return winner;
     }
 }
