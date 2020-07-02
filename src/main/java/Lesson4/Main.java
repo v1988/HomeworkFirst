@@ -1,5 +1,6 @@
 package Lesson4;
 
+
 public class Main {
     public static void main(String[] args) {
         Main.while1(); // #1
@@ -37,7 +38,7 @@ public class Main {
 
     public static void while2() {
         int a = 100;
-        while (a >= 10) {
+        while (a >= 0) {
             System.out.println(a);
             a -= 10;
         }
@@ -45,7 +46,7 @@ public class Main {
     }
 
     public static void for2() {
-        for (int a = 100; a >= 10; a -= 10) {
+        for (int a = 100; a >= 0; a -= 10) {
             System.out.println(a);
         }
         System.out.println("Finish №4");
@@ -53,34 +54,26 @@ public class Main {
 
     public static void max1() {
         int[] array = {1, 2, 6, 12, 43, 45, 19, 76, 101, 36};
-        int qmax1 = (array[0] >= array[9]) ? array[0] : array[9];
-        int qmax2 = (array[1] >= array[8]) ? array[1] : array[8];
-        int qmax3 = (array[2] >= array[7]) ? array[2] : array[7];
-        int qmax4 = (array[3] >= array[6]) ? array[3] : array[6];
-        int qmax5 = (array[4] >= array[5]) ? array[4] : array[5];
-
-        int smax1 = (qmax1 >= qmax5) ? qmax1 : qmax5;
-        int smax2 = (qmax2 >= qmax4) ? qmax2 : qmax4;
-
-        int fmax1 = (smax1 >= smax2) ? smax1 : smax2;
-        int max = (fmax1 >= qmax3) ? fmax1 : qmax3;
+        int b = 0;
+        int max = (array[b] >= array[b+1]) ? array[b] : array[b+1];
+        b += 2;
+        while (b <= array.length-2) {
+            max = (max >= array[b]) ? max : array[b];
+            b++;
+        }
         System.out.println(max);
         System.out.println("Finish №5");
     }
 
     public static void min1() {
         int[] array = {1, 2, 6, 12, 43, 45, 19, 76, 101, 36};
-        int qmin1 = (array[0] <= array[9]) ? array[0] : array[9];
-        int qmin2 = (array[1] <= array[8]) ? array[1] : array[8];
-        int qmin3 = (array[2] <= array[7]) ? array[2] : array[7];
-        int qmin4 = (array[3] <= array[6]) ? array[3] : array[6];
-        int qmin5 = (array[4] <= array[5]) ? array[4] : array[5];
-
-        int smin1 = (qmin1 <= qmin5) ? qmin1 : qmin5;
-        int smin2 = (qmin2 <= qmin4) ? qmin2 : qmin4;
-
-        int fmin1 = (smin1 <= smin2) ? smin1 : smin2;
-        int min = (fmin1 <= qmin3) ? fmin1 : qmin3;
+        int b = 0;
+        int min = (array[b] <= array[b+1]) ? array[b] : array[b+1];
+        b += 2;
+        while (b <= array.length-2) {
+            min = (min <= array[b]) ? min : array[b];
+            b++;
+        }
         System.out.println(min);
         System.out.println("Finish №6");
     }
@@ -97,8 +90,8 @@ public class Main {
         int a = 0;
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         while (a<=9) {
-            int var = (array[a]/2)*2;
-            System.out.println((array[a] > var) ? a+1 + " не четное" : a+1 + " четное" );
+           String b =(array[a]%2 != 0) ? a + 1 + " не четное" : a + 1 + " четное";
+            System.out.println(b);
             a++;
         }
         System.out.println("Finish №8");
