@@ -3,21 +3,21 @@ package Lesson4;
 
 public class Main {
     public static void main(String[] args) {
-        Main.while1(); // #1
+        while1(); // #1
         System.out.println("   ");
-        Main.for1(); // #2
+        for1(); // #2
         System.out.println("   ");
-        Main.while2(); // #3
+        while2(); // #3
         System.out.println("   ");
-        Main.for2(); // #4
+        for2(); // #4
         System.out.println("   ");
-        Main.max1(); // #5
+        max1(); // #5
         System.out.println("   ");
-        Main.min1(); // #6
+        min1(); // #6
         System.out.println("   ");
-        Main.text();
+        text();
         System.out.println("   ");
-        Main.even(); // #8
+        even(); // #8
     }
 
     public static void while1() {
@@ -54,10 +54,9 @@ public class Main {
 
     public static void max1() {
         int[] array = {1, 2, 6, 12, 43, 45, 19, 76, 101, 36};
-        int b = 0;
-        int max = (array[b] >= array[b+1]) ? array[b] : array[b+1];
-        b += 2;
-        while (b <= array.length-2) {
+        int b = 1;
+        int max = (array[0]);
+        while (b < array.length) {
             max = (max >= array[b]) ? max : array[b];
             b++;
         }
@@ -67,10 +66,9 @@ public class Main {
 
     public static void min1() {
         int[] array = {1, 2, 6, 12, 43, 45, 19, 76, 101, 36};
-        int b = 0;
-        int min = (array[b] <= array[b+1]) ? array[b] : array[b+1];
-        b += 2;
-        while (b <= array.length-2) {
+        int b = 1;
+        int min = (array[0]);
+        while (b < array.length-2) {
             min = (min <= array[b]) ? min : array[b];
             b++;
         }
