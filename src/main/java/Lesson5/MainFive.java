@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class Main {
+public class MainFive {
     public static void main(String[] args) throws IOException {
         String str1 = " Hillel is my feature. I will be developer   ";
         System.out.println(str1 == "");
