@@ -1,9 +1,15 @@
 package Lesson7;
 
 public class Final {
-    final int i1 = 1;
-    final int i2 = 2;
-    final int i3 = 3;
+    final int i1 ;
+    final int i2 ;
+    final int i3 ;
+
+    public Final(int i1, int i2, int i3) {
+        this.i1 = i1;
+        this.i2 = i2;
+        this.i3 = i3;
+    }
 
     // Низя менять final
     // public void setInt1(int int1) { this.i1 = int1; }
