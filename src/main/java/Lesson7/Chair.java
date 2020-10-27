@@ -1,24 +1,24 @@
 package Lesson7;
 
 public class Chair {
-    private int age;
-    private double price;
+    private int cAge;
+    private double cPrice;
 
     public Chair() {
     }
 
-    public Chair(int age, double price) {
-        this.age = age;
-        this.price = price;
+    public Chair(int cAge, double cPrice) {
+        this.cAge = cAge;
+        this.cPrice = cPrice;
     }
-    public void setAge(int age1) {
-        this.age = age1;
+    public void setCAge(int cAge1) {
+        this.cAge = cAge1;
     }
 
-    public void setPrice(double price1) {
-        this.price = price1;
+    public void setCPrice(double cPrice1) {
+        this.cPrice = cPrice1;
     }
-    public int getAge() {return age;}
+    public int getCAge() {return cAge;}
 
-    public double getPrice(){ return price;}
+    public double getCPrice(){ return cPrice;}
 }

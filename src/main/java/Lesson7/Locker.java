@@ -1,26 +1,26 @@
 package Lesson7;
 
 public class Locker {
-    private int age;
-    private double price;
+    private int lAge;
+    private double lPrice;
 
     public Locker() {
     }
 
-    public Locker(int age, double price) {
-        this.age = age;
-        this.price = price;
+    public Locker(int lage, double lPrice) {
+        this.lAge = lAge;
+        this.lPrice = lPrice;
     }
 
-    public void setAge(int age1) {
-        this.age = age1;
+    public void setLAge(int lAge1) {
+        this.lAge = lAge1;
     }
 
-    public void setPrice(double price1) {
-        this.price = price1;
+    public void setLPrice(double lPrice1) {
+        this.lPrice = lPrice1;
     }
-    public int getAge() {return age;}
+    public int getLAge() {return lAge;}
 
-    public double getPrice(){ return price;}
+    public double getLPrice(){ return lPrice;}
 
 }

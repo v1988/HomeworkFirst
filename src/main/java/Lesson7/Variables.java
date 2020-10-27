@@ -3,13 +3,13 @@ package Lesson7;
 public class Variables {
     byte b;
     short s;
-    int i;
-    long l;
-    float f;
-    double d;
-    char c;
-    boolean boo;
-    String str;
+    private int i;
+    private long l;
+    private float f;
+    private double d;
+    private char c;
+    private boolean boo;
+    private String str;
 
 
     public void setByte(byte b1) {
@@ -87,30 +87,36 @@ public class Variables {
 
 
 
-    public Variables(byte b) { this.b = b; }
+    public Variables(byte b) {
+        this.b = b;
+    }
 
 
     public Variables(byte b, short s) {
         this.b = b;
-        this.s = s; }
+        this.s = s;
+    }
 
         public Variables(byte b, short s, int i) {
         this.b = b;
         this.s = s;
-        this.i = i; }
+        this.i = i;
+    }
 
         public Variables(byte b, short s, int i, long l) {
         this.b = b;
         this.s = s;
         this.i = i;
-        this.l = l; }
+        this.l = l;
+    }
 
         public Variables(byte b, short s, int i, long l, float f) {
         this.b = b;
         this.s = s;
         this.i = i;
         this.l = l;
-        this.f = f; }
+        this.f = f;
+    }
 
         public Variables(byte b, short s, int i, long l, float f, double d) {
         this.b = b;
@@ -118,7 +124,8 @@ public class Variables {
         this.i = i;
         this.l = l;
         this.f = f;
-        this.d = d; }
+        this.d = d;
+    }
 
         public Variables(byte b, short s, int i, long l, float f, double d, char c) {
         this.b = b;
@@ -127,7 +134,8 @@ public class Variables {
         this.l = l;
         this.f = f;
         this.d = d;
-        this.c = c; }
+        this.c = c;
+    }
 
         public Variables(byte b, short s, int i, long l, float f, double d, char c, boolean boo) {
         this.b = b;
@@ -137,7 +145,8 @@ public class Variables {
         this.f = f;
         this.d = d;
         this.c = c;
-        this.boo = boo; }
+        this.boo = boo;
+    }
 
         public Variables(byte b, short s, int i, long l, float f, double d, char c, boolean boo, String str) {
         this.b = b;
